@@ -7,11 +7,11 @@ let htmlString = '<artcile class="totem">'
 
 for (const pikamon of pikamons) {
     htmlString += `<section class="column">
-        <div class="pikamonsters">${pikamon.imageUrl}</div>
-        <div class="pikamonsters">${pikamon.name}</div>
-        <div class="pikamonsters">${pikamon.category}</div>
-        <div class="pikamonsters">${pikamon.abilities}</div>
-        <div class="pikamonsters">${pikamon.weakness}</div>
+        <div class="piko-img">${pikamon.imageUrl}</div>
+        <div class="piko-name">${pikamon.name}</div>
+        <div class="piko-category">${pikamon.category}</div>
+        <div class="piko-abilities">${pikamon.abilities}</div>
+        <div class="piko-weakness">${pikamon.weakness}</div>
         </section>`
 
 
