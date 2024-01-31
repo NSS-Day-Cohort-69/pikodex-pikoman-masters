@@ -73,5 +73,5 @@ const database = [
     }
 ];
 export const getpikamon = () => {
-    return database
+    return database.map(data => ({...database}))
 }
