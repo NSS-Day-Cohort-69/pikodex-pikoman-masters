@@ -72,6 +72,6 @@ const database = [
         weakness: 'Close Talkers'
     }
 ];
-export const getpikamon = () => {
-    return database.map(data => ({...database}))
+export const getPikamon = () => {
+    return database.map(data => ({...data}))
 }

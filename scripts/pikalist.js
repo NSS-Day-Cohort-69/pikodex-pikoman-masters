@@ -1,7 +1,7 @@
-import { getpikamon } from './database.js'
+import { getPikamon } from './database.js'
 
 export const pikaList = () => {
-const pikamons = getpikamon()
+const pikamons = getPikamon()
 
 let htmlString = '<artcile class="totem">'
 
