@@ -1,5 +1,3 @@
-const container = document.querySelector("#container");
-
 //create html skeleton "JAYME"
 //>>>9 pikomon information packs
 //>>>only 1 class needed for all images
@@ -15,3 +13,10 @@ const container = document.querySelector("#container");
 //>info-border: none
 //>>underline/bold the name of each pikomon
 //>regular arial for info font
+const container = document.querySelector("#container");
+
+import { pikaList } from "./pikalist.js";
+
+const getPikaList = pikaList();
+
+console.log(getPikaList);
