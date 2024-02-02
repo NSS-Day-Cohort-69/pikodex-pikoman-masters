@@ -9,23 +9,24 @@ body {
 }
 
 #container {
-    display: flex;
-    flex-flow: column wrap;
     margin-top: 2rem;
     margin-bottom: 3rem;
     background-color: #d4a3f7;
-    border: dashed black 5px;
+    border: solid #02071f 5px;
 }
 
 .piko-card {
-    flex-basis: 25%;
-    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .piko-img {
-    width: 100%;
-    border-radius: 1em;
-    border: solid black 2px;
+    height: 55%;
+    width: auto;
+    padding: 50px;
+    
 }
 
 .piko-info {
@@ -38,18 +39,22 @@ body {
 }
 
 .piko-name {
+    padding: 5px;
     font-family: "copperplate", fantasy;
     font-size: 1.5em;
 }
 
 .piko-abilities {
+    padding: 2px 5px;
 
 }
 
 .piko-category {
+    padding-left: 5px;
 
 }
 
 .piko-weakness {
+    padding: 2px 5px;
 
 }

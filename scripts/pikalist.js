@@ -1,22 +1,20 @@
-import { getPikamon } from './database.js'
+import { getPikamon } from "./database.js";
 
 export const pikaList = () => {
-const pikamons = getPikamon()
+  const pikamons = getPikamon();
 
-let htmlString = '<artcile class="totem">'
+  let htmlString = '<article class="totem">';
 
-for (const pikamon of pikamons) {
-    htmlString += `<section class="column">
-        <div class="piko-img">${pikamon.imageUrl}</div>
-        <div class="piko-name">${pikamon.name}</div>
-        <div class="piko-category">${pikamon.category}</div>
-        <div class="piko-abilities">${pikamon.abilities}</div>
-        <div class="piko-weakness">${pikamon.weakness}</div>
-        </section>`
+  for (const pikamon of pikamons) {
+    htmlString += `<section class="piko-card">
+        <div><img class="piko-img" src=${pikamon.imageUrl}></img></div>
+        <div class="piko-name">Name: ${pikamon.name}</div>
+        <div class="piko-category">Category: ${pikamon.category}</div>
+        <div class="piko-abilities">Abilities: ${pikamon.abilities}</div>
+        <div class="piko-weakness">Weakness: ${pikamon.weakness}</div>
+        </section>`;
+  }
+  htmlString += `</article>\n`;
 
-
-}
-htmlString += `</article>\n`
-
-return htmlString
-}
+  return htmlString;
+};
