@@ -17,6 +17,4 @@ const container = document.querySelector("#container");
 
 import { pikaList } from "./pikalist.js";
 
-console.log(getPikaList);
-
 container.innerHTML = pikaList();
